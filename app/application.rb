@@ -9,6 +9,7 @@ class Application
       item = @@items.find{|i| item.name == item_name}
       
       resp.write item.price
+    end
+      resp.finish
   end
-    resp.finish
 end
